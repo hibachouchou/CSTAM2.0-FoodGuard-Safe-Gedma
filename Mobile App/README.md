@@ -59,6 +59,7 @@ The app provides four types of scans:
 ## Demo Links
 You can try the demo or view app screenshots here:  
 [FoodGuard Mobile App Demo](https://jolly-crate-87837277.figma.site/)
+
 [FoodGuard Mobile App Demo Video](https://drive.google.com/file/d/1zb3B9qFzPzsq3sQWH4L7VlPLXgxwMqIA/view?usp=sharing)
 
 ---
