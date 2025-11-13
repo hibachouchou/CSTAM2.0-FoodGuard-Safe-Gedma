@@ -86,7 +86,23 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 
 **Why it matters:** Ensures that subsequent sensor readings reflect actual food spoilage, not environmental variations.  
 
+
+## Measurement Thresholds
+
+| Parameter | Yellow Warning | Red Alert | Notes |
+|-----------|----------------|-----------|-------|
+| MQ135 Ratio (mqValue/baselineMQ) | 1.20 × food factor | 1.50 × food factor | Gas level relative to baseline |
+| MQ135 Delta (mqValue - baselineMQ) | 150 × food factor | 400 × food factor | Difference from baseline |
+| Temperature | ≥ 8°C risk | - | Considered for perishable foods |
+| Humidity | ≥ 85% risk | - | High humidity accelerates spoilage |
+
+> **Food Type Factors:** Adjust thresholds for specific foods:  
+> POULTRY = 0.85, DAIRY = 0.88, COOKED = 0.90, FRUITS/VEG/SALAD = 0.98, GENERIC = 1.0
+
 ---
+
+---
+
 
 ## Hardware Components
 ![Components](composants.jpg)
