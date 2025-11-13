@@ -70,8 +70,11 @@ The system uses **FreeRTOS tasks** to handle concurrency:
   "hum": 72.0
 }
 ```
-![MQTT1](topic.jpg)
-![MQTT2](mobile-output.jpg)
+
+<p float="left">
+  <img src="topic.jpg" width="200" />
+  <img src="mobile-output.jpg" width="200" />
+</p>
 
 ## Calibration
 
@@ -148,6 +151,6 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 
 ---
 
-## Wiring Diagram Example
+## Demo Links
+[Food Spoilage Prototype Demo](https://drive.google.com/drive/folders/12Cr1-BCgiZLW0IBSBpdOh_jnsUY-TUoO?usp=sharing)
 
-![Wiring Diagram](images/wiring_diagram.png)

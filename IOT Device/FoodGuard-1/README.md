@@ -20,3 +20,4 @@ Adds **WiFi connectivity** and **MQTT publishing**, enabling remote monitoring o
 - Data published continuously even if state does not change.
 
 ---
+![Output](output.png)

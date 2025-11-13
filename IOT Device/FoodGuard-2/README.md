@@ -23,3 +23,4 @@ Optimized for **lower energy consumption**. Sensors and MQTT publishing only tri
 - Single measurement per button press → no continuous monitoring.
 
 ---
+![Output](output.png)
