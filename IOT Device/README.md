@@ -11,6 +11,8 @@ This repository contains three versions of a food spoilage monitoring prototype 
 ---
 ## Overview
 
+![Prototype](prototype.jpg)
+
 The system uses **FreeRTOS tasks** to handle concurrency:
 
 - **LED Task:** Handles the sequence of LEDs (Green → Yellow → Red) when the system is turned on via a button.
@@ -68,6 +70,8 @@ The system uses **FreeRTOS tasks** to handle concurrency:
   "hum": 72.0
 }
 ```
+![MQTT1](topic.jpg)
+![MQTT2](mobile-output.jpg)
 
 ## Calibration
 
@@ -82,6 +86,7 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 ---
 
 ## Hardware Components
+![Components](composants.jpg)
 
 ### Sensors
 
@@ -106,6 +111,13 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 
 - **Breadboard:** used with male/male, male/female, female/female jumper wires.  
 - **PlatformIO & USB:** used for programming the ESP32.  
+
+<p float="left">
+  <img src="esp32.png" width="200" />
+  <img src="dht11.png" width="200" />
+  <img src="mq135.png" width="200" />
+</p>
+
 
 ---
 
@@ -138,7 +150,4 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 
 ## Wiring Diagram Example
 
-You can include an image like this:
-
-```markdown
 ![Wiring Diagram](images/wiring_diagram.png)
