@@ -1,7 +1,5 @@
 ## Part 4 : AWS Services for User Management
 
-# AWS Services for User Management
-
 ## 1️⃣ Amazon Cognito
 **Purpose:** Authentication, registration, and user management.  
 
