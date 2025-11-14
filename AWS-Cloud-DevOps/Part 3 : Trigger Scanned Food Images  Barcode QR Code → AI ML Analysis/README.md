@@ -78,16 +78,15 @@ Keep raw metadata and AI results separate if desired.
 *Why optional:* Only needed if your workflow requires reading product labels.
 
 ## 5️⃣ Workflow Summary
-S3 Image Upload 
-    ↓
-Lambda Function: ImageAnalyzer
-    ↓
-   1️⃣ Rekognition → predicts FRAIS / ATTENTION / SPOILED
-   2️⃣ Textract (optional) → extracts label text
-    ↓
-Update DynamoDB → store aiState, confidence, optional text
 
+S3 Image Upload  
+↓  
+Lambda Function: `ImageAnalyzer`  
+↓  
+1️⃣ **Rekognition** → predicts `FRAIS` / `ATTENTION` / `SPOILED`  
+2️⃣ **Textract (optional)** → extracts label text  
+↓  
+Update DynamoDB → store `aiState`, `confidence`, optional text  
 
-Required: Rekognition
-
-Optional: Textract
+**Required:** Rekognition  
+**Optional:** Textract
