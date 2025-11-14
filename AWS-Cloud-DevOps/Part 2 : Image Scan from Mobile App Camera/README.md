@@ -74,24 +74,3 @@ Using a structured path makes querying and managing files simpler.
 | Chicken Products  | `s3://foodguard-images/food-images/chicken/chicken-98765/1731583200.jpg` |
 
 ---
-
-## Architectural Flow Diagram
-
-This diagram shows the high-level process from the mobile app to AWS data storage services.
-
-```mermaid
-graph TD
-    A[Mobile App React Native] --> B{Scan QR / Barcode / Take Photo}
-    B --> C[Upload Image to S3 Bucket: "foodguard-images"]
-    C --> D(Object path: food-images/{category}/{productId}/{timestamp}.jpg)
-    C --> E[DynamoDB: FoodImageMetadata]
-    D --> E
-    E --> F(Stores Metadata: productId, timestamp, s3Url, type, category, deviceId, notes)
-```
-Explanation:
-
-The app's action of scanning and uploading triggers two parallel paths:
-
-Uploading the image to S3.
-
-Storing searchable metadata in DynamoDB.
