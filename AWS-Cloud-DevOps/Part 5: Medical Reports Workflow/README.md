@@ -1,4 +1,4 @@
-# FoodGuard Medical Reports & Health Notes Architecture
+# FoodGuard Medical Reports & Health Notes Workflow
 
 ---
 
