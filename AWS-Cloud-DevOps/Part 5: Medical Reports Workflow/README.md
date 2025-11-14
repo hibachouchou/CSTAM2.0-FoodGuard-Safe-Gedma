@@ -1,4 +1,4 @@
-#  Medical Reports & Health Notes Workflow
+# FoodGuard Medical Reports & Health Notes Architecture
 
 ---
 
@@ -94,6 +94,11 @@ Comprehend Medical → Analyze text
  v  
 Lambda → Update DynamoDB: MedicalAnalysis  
  - Attributes: aiCategory, aiRiskScore, extractedMedicalText, medicalEntities  
+ - **Note:** Lambda will also update the `theUpdates` DynamoDB table after getting AI results with:  
+  - aiCategory  
+  - aiRiskScore  
+  - extractedMedicalText  
+  - medicalEntities  
 
 **Example DynamoDB item (MedicalAnalysis):**
 
@@ -123,4 +128,4 @@ API Gateway → Lambda: AddHealthNoteHandler
  → DynamoDB: UserHealthNotes  
 
 Optional ML Flow:  
-S3 Upload → Lambda: ProcessMedicalReport → Textract → Comprehend Medical → DynamoDB: MedicalAnalysis
+S3 Upload → Lambda: ProcessMedicalReport → Textract → Comprehend Medical → DynamoDB: MedicalAnalysis → **theUpdates table**
