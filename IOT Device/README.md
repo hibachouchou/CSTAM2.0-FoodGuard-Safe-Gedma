@@ -105,7 +105,7 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 
 
 ## Hardware Components
-![Components](composants.jpg)
+![Components](composants1.jpg)
 
 ### Sensors
 
@@ -147,14 +147,34 @@ The system uses **FreeRTOS tasks** to handle concurrency:
 - USB port & rechargeable battery  
 
 **Future sensors:**
+![Components](news.jpg)
 
-- MQ-137 (NH₃)  
-- MH-Z19B (CO₂)  
-- TCS3200 (Color/RGB)  
-- DS18B20 (Food/contact temperature)  
-- pH Sensor  
-- e-Nose  
-- Biosensors (The future of Food IoT)  
+- MQ-137 (NH₃) :
+Detects ammonia released during protein decomposition in spoiled meat and fish.
+
+- MQ-136 (H₂S) :
+Measures hydrogen sulfide, a strong indicator of anaerobic bacterial activity (rotten eggs, advanced spoilage).
+
+- MH-Z19B (CO₂) :
+Monitors carbon dioxide levels, which rise as microorganisms respire during spoilage.
+
+- TCS3200 (Color/RGB Sensor) :
+Captures color variations, browning, and visual changes in food surfaces.
+
+- DS18B20 (Food/Contact Temperature Sensor) :
+Provides precise, waterproof, direct-contact temperature readings for accurate food condition monitoring.
+
+- pH Sensor :
+Detects changes in acidity/alkalinity caused by bacterial growth or chemical degradation.
+
+- Oxygen (O₂) Sensor :
+Measures oxygen consumption inside sealed or semi-sealed packaging, indicating microbial respiration.
+
+- e-Nose (Electronic Nose System) :
+A multi-gas array capable of detecting complex spoilage odors and volatile organic compounds patterns.
+
+- Biosensors (Future Development in Food IoT) :
+Advanced biological sensors capable of detecting specific pathogens, toxins, or biochemical markers in food.
 
 ---
 
